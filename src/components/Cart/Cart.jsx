@@ -2,7 +2,7 @@ import React from "react";
 import "./Cart.css";
 
 const Cart = (props) => {
-  console.log(props.cart);
+  // console.log(props.cart);
   let total = 0;
   let shipping = 0;
   const { cart } = props;
