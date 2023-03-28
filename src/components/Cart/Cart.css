@@ -1,0 +1,15 @@
+.cart {
+  background: rgba(255, 153, 0, 0.3);
+  height: 100%;
+  padding: 3rem;
+}
+
+.cart-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+
+  color: #2a414f;
+}
