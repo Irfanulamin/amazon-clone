@@ -13,3 +13,9 @@
 
   color: #2a414f;
 }
+
+.cart-btn {
+  padding: 0.875rem 1.375rem;
+  background-color: red;
+  color: beige;
+}
