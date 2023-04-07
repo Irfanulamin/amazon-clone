@@ -1,10 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Shop from "./components/Shop/Shop";
 import Home from "./components/Layout/Home";
+import Orders from "./components/Orders/Orders";
+import Iventory from "./components/Inventory/Inventory";
+import Login from "./components/Login/Login";
+import cartProductsLoader from "./Loader/cartProductsLoader";
 
 const router = createBrowserRouter([
   {
@@ -16,8 +19,17 @@ const router = createBrowserRouter([
         element: <Shop></Shop>,
       },
       {
-        path: "/",
-        element: <Shop></Shop>,
+        path: "/orders",
+        element: <Orders></Orders>,
+        loader: cartProductsLoader,
+      },
+      {
+        path: "/inventory",
+        element: <Iventory></Iventory>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
       },
     ],
   },
